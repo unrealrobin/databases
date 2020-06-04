@@ -8,11 +8,11 @@ var parser = require('body-parser');
 // Router
 var router = require('./routes.js');
 
-var app = express();
+var app = express(); // initialize express
 module.exports.app = app;
 
 // Set what we are listening on.
-app.set('port', 3000);
+app.set('port', 3000); //initializes the server ?
 
 // Logging and parsing
 app.use(morgan('dev'));
